@@ -42,7 +42,7 @@ void loop() {
 }
 ```
 
-##### Control con potenciometro
+##### LED con potenciometro
 ```js
 void setup() {
   pinMode(2, INPUT);  // Botón como entrada
