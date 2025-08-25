@@ -67,6 +67,7 @@ void loop() {
 }
 ```
 <img src="https://raw.githubusercontent.com/rarandamartinez-del/interfazII/refs/heads/main/img/led%20potenciometro.png"/>
+
 ##### Ejercicio n°5 Semáforo
 ```js
 int LED_1 = 6;  // Luz roja autos
