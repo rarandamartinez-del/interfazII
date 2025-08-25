@@ -108,4 +108,4 @@ void loop() {
   //delay(2000); // 2 segundos
 }
 ```
-
+<img src="https://raw.githubusercontent.com/rarandamartinez-del/interfazII/refs/heads/main/img/Semaforo.png"/>
