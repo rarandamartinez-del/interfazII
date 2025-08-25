@@ -34,6 +34,7 @@ void loop() {   // Se repite infinitamente
 
 }
 ```
+<img src="https://raw.githubusercontent.com/rarandamartinez-del/interfazII/refs/heads/main/img/led%20parpadeante.png"/>
 
 ##### Ejercicio n°3 Control por Pulsador
 ```js
@@ -49,6 +50,7 @@ void loop() {
   }
 }
 ```
+<img src="https://raw.githubusercontent.com/rarandamartinez-del/interfazII/refs/heads/main/img/led%20pulsador.png"/>
 
 ##### Ejercicio n°4 LED con potenciometro
 ```js
@@ -64,6 +66,7 @@ void loop() {
   }
 }
 ```
+<img src="https://raw.githubusercontent.com/rarandamartinez-del/interfazII/refs/heads/main/img/led%20potenciometro.png"/>
 ##### Ejercicio n°5 Semáforo
 ```js
 int LED_1 = 6;  // Luz roja autos
