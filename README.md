@@ -1,6 +1,6 @@
 # interfazII
 
-##### hola mundo
+##### Ejercicio n°1 hola mundo
 ```js
 void setup() {
   Serial.begin(9600); // Inicia la comunicación serie a 9600 bps
@@ -10,7 +10,7 @@ void setup() {
 void loop() {
 }
 ```
-##### LED intermitente (Blink)
+##### Ejercicio n°2 LED intermitente (Blink)
 ```js
 void setup() {  // Configuración inicial (ej: pines como entrada/salida)
   pinMode(13, OUTPUT);  // Pin 13 como salida
@@ -35,7 +35,7 @@ void loop() {   // Se repite infinitamente
 }
 ```
 
-##### Control por Pulsador
+##### Ejercicio n°3 Control por Pulsador
 ```js
 void setup() {
   pinMode(2, INPUT);  // Botón como entrada
@@ -50,7 +50,7 @@ void loop() {
 }
 ```
 
-##### LED con potenciometro
+##### Ejercicio n°4 LED con potenciometro
 ```js
 void setup() {
   pinMode(2, INPUT);  // Botón como entrada
