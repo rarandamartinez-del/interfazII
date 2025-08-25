@@ -1,7 +1,15 @@
 # interfazII
 
 ##### hola mundo
+```js
+void setup() {
+  Serial.begin(9600); // Inicia la comunicación serie a 9600 bps
+  Serial.println("Hola, Mundo!"); // Envía "Hola, Mundo!" al monitor serial
+}
 
+void loop() {
+}
+```
 ##### LED intermitente (Blink)
 ```js
 void setup() {  // Configuración inicial (ej: pines como entrada/salida)
