@@ -100,11 +100,20 @@ void loop() {
   delay(2000); // 2 segundos
   digitalWrite(LED_2, LOW);   // Amarillo autos apagado
 
-  // 🚦 Fase 3: Rojo autos, verde peatones
+   // 🚦 Fase 3: Rojo autos, verde peatones
   digitalWrite(LED_1, HIGH);  // Rojo autos encendido
   digitalWrite(LED_5, LOW);   // Rojo peatones apagado
   digitalWrite(LED_4, HIGH);  // Verde peatones encendido
-  delay(5000); // 5 segundos
+  delay(5000);             // Esperar 1 segundo
+  digitalWrite(LED_4, LOW);   // Apagar LED
+  delay(500);             // Esperar 1 segundo
+   digitalWrite(LED_4, HIGH);  // Verde peatones encendido
+  delay(500);             // Esperar 1 segundo
+  digitalWrite(LED_4, LOW);   // Apagar LED
+  delay(500);             // Esperar 1 segundo
+  digitalWrite(LED_4, HIGH);  // Verde peatones encendido
+  delay(500);             // Esperar 1 segundo
+
 
   // 🚦 Fase 4: Rojo autos, rojo peatones (tiempo intermedio)
   //digitalWrite(LED_4, LOW);   // Verde peatones apagado
