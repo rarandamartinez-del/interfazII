@@ -125,7 +125,7 @@ void loop() {
 
 ##### Ejercicio n°6 Arduino botón 
 ```js
-PROCESSING
+PROCESSING:
 
 import processing.serial.*;
 
@@ -193,7 +193,7 @@ void loop() {
 
 ##### Ejercicio n°7 Arduino botón 
 ```js
-PROCESSING
+PROCESSING:
 import processing.serial.*;
 
 Serial myPort;
@@ -241,7 +241,7 @@ void draw() {
   }
 }
 
-ARDUINO
+ARDUINO:
 int buttonPin = 2;       // Pin del botón
 int potPin = A0;         // Pin del potenciómetro
 int buttonState = 0;
