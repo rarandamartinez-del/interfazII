@@ -125,6 +125,8 @@ void loop() {
 
 ##### Ejercicio n°6 Arduino botón 
 ```js
+PROCESSING
+
 import processing.serial.*;
 
 Serial myPort;
@@ -165,3 +167,26 @@ void draw() {
     }
   }
 }
+
+ARDUINO:
+
+int buttonPin = 2;       // Pin del botón
+int potPin = A0;         // Pin del potenciómetro
+int buttonState = 0;
+
+void setup() {
+  pinMode(buttonPin, INPUT_PULLUP); // Botón con resistencia interna
+  Serial.begin(9600);
+}
+
+void loop() {
+  buttonState = digitalRead(buttonPin);
+
+  if (buttonState == HIGH) {   // Botón presionado
+    int potValue = analogRead(potPin);   // 0 - 1023
+    Serial.print("BTN,");     // etiqueta para Processing
+    Serial.println(potValue); // mando el valor junto con el evento
+    delay(200);               // debounce simple
+  }
+}
+```
