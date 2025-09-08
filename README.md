@@ -240,6 +240,7 @@ void draw() {
     }
   }
 }
+
 ```js
 ARDUINO:
 int buttonPin = 2;       // Pin del botón
