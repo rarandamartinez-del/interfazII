@@ -371,3 +371,4 @@ void playTrack(int index) {
   currentTrack = index;
 }
 ```
+<img src="https://raw.githubusercontent.com/rarandamartinez-del/interfazII/refs/heads/main/img/Botonera.png"/>
