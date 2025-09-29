@@ -287,7 +287,7 @@ void loop() {
   }
 }
 ```
-<img src="https://raw.githubusercontent.com/rarandamartinez-del/interfazII/refs/heads/main/img/led%20par%20impar.png>
+<img src="https://raw.githubusercontent.com/rarandamartinez-del/interfazII/refs/heads/main/img/led%20par%20impar.png"/>
 
 ##### Ejercicio n°9 botonera sonido 
 ```js
