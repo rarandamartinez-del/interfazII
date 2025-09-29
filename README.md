@@ -287,6 +287,8 @@ void loop() {
   }
 }
 ```
+https://raw.githubusercontent.com/rarandamartinez-del/interfazII/refs/heads/main/img/led%20par%20impar.png
+
 ##### Ejercicio n°9 botonera sonido 
 ```js
 // Importamos librería para comunicación serial
