@@ -408,3 +408,58 @@ void playTrack(int index) {
 }
 ```
 <img src="https://raw.githubusercontent.com/rarandamartinez-del/interfazII/refs/heads/main/img/Botonera.png"/>
+
+##### led rgb con potenciometro
+
+```js
+// Definición de pines para los colores del LED RGB
+const int pinRojo = 9;   // Pin PWM para el color Rojo
+const int pinVerde = 10; // Pin PWM para el color Verde
+const int pinAzul = 11;  // Pin PWM para el color Azul
+
+// Definición de pines analógicos para los Potenciómetros
+const int potRojo = A0;  // Potenciómetro para el Rojo
+const int potVerde = A1; // Potenciómetro para el Verde
+const int potAzul = A2;  // Potenciómetro para el Azul
+
+void setup() {
+  // Configura los pines del LED como salidas
+  pinMode(pinRojo, OUTPUT);
+  pinMode(pinVerde, OUTPUT);
+  pinMode(pinAzul, OUTPUT);
+  
+  // Puedes inicializar la comunicación serial para depuración si lo deseas
+  // Serial.begin(9600);
+}
+
+void loop() {
+  // 1. Lectura de los valores analógicos de los potenciómetros (0 a 1023)
+  int valorPotRojo = analogRead(potRojo);
+  int valorPotVerde = analogRead(potVerde);
+  int valorPotAzul = analogRead(potAzul);
+
+  // 2. Mapeo de los valores leídos al rango de PWM (0 a 255)
+  // La función 'map' convierte un rango de valores a otro
+  int intensidadRojo = map(valorPotRojo, 0, 1023, 0, 255);
+  int intensidadVerde = map(valorPotVerde, 0, 1023, 0, 255);
+  int intensidadAzul = map(valorPotAzul, 0, 1023, 0, 255);
+
+  // 3. Escribir los valores PWM a los pines del LED
+  // Esto controla la intensidad de cada color, creando el color resultante
+  analogWrite(pinRojo, intensidadRojo);
+  analogWrite(pinVerde, intensidadVerde);
+  analogWrite(pinAzul, intensidadAzul);
+
+  /*
+  // Descomentar para ver los valores en el Monitor Serial (opcional)
+  Serial.print("R: "); Serial.print(intensidadRojo);
+  Serial.print("\tG: "); Serial.print(intensidadVerde);
+  Serial.print("\tB: "); Serial.println(intensidadAzul);
+  */
+  
+  // Una pequeña pausa para estabilidad, aunque no es estrictamente necesaria aquí
+  delay(5); 
+}
+
+```
+<img src="http://raw.githubusercontent.com/rarandamartinez-del/interfazII/refs/heads/main/img/rgb.png"/>
