@@ -289,7 +289,43 @@ void loop() {
 ```
 <img src="https://raw.githubusercontent.com/rarandamartinez-del/interfazII/refs/heads/main/img/led%20par%20impar.png"/>
 
-##### Ejercicio n°9 botonera sonido 
+##### Ejercicio n°9 
+```js
+void setup() {
+  Serial.begin(9600);   // Inicia la comunicación serial
+}
+
+void loop() {
+  for (int i = 0; i < 5; i++) {
+    Serial.println(i);  // imprime 0,1,2,3,4
+    delay(500);         // medio segundo entre cada número
+  }
+}
+```
+```js
+
+int valor;  // aquí guardaremos la lectura del sensor
+
+void setup() {
+  Serial.begin(9600);   // Inicia la comunicación serial
+}
+
+void loop() {
+  valor = analogRead(A0);   // lee el pin analógico A0
+
+  if (valor < 200) {
+    Serial.println("Muy bajo");
+  } else if (valor < 500) {
+    Serial.println("Medio");
+  } else {
+    Serial.println("Alto");
+  }
+
+  delay(500); // medio segundo entre lecturas
+}
+```
+
+##### Ejercicio n°10 botonera  
 ```js
 // Importamos librería para comunicación serial
 import processing.serial.*;
