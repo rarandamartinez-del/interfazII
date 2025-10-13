@@ -2,8 +2,17 @@
 #####Introducción a interfaz
 
 1.[Hola Mundo](#ejercicio-n1-hola-mundo) <br>
-1.[LED intermitente](#ejercicio-n2-led-intermitente-blink) <br>
-
+2.[LED intermitente](#ejercicio-n2-led-intermitente-blink) <br>
+3.[Control por Pulsador](#ejercicio-n3-control-por-pulsador) <br>
+4.[LED con potenciometro](#ejercicio-n4-led-con-potenciometro) <br>
+5.[Semáforo](#ejercicio-n5-sem%C3%A1foro) <br>
+6.[Arduino botón](#ejercicio-n6-arduino-bot%C3%B3n) <br>
+7.[Arduino botón](#ejercicio-n7-arduino-bot%C3%B3n) <br>
+8.[Led par/impar](d#ejercicio-n8-led-parimpar) <br>
+9.[ej9](#ejercicio-n9) <br>
+10.[botonera](#ejercicio-n10-botonera) <br>
+12.[Sensor sharp](#sensor-sharp) <br>
+12.[Sensor HUMEDAD](#sensor-humedad) <br>
 ##### Ejercicio n°1 hola mundo
 ```js
 void setup() {
