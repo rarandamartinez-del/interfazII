@@ -533,3 +533,5 @@ void loop()
 }
 
 ```
+
+<img src="https://raw.githubusercontent.com/rarandamartinez-del/interfazII/refs/heads/main/img/sharp.png"/>
