@@ -510,6 +510,25 @@ void draw()
 
 ```js
 ARDUINO
+// Definir el pin del sensor Sharp
+int sharpPin = A0;
+
+void setup() {
+  Serial.begin(9600); // Iniciar comunicación serial
+}
+
+void loop() {
+  int sensorValue = analogRead(sharpPin); // Leer valor del sensor
+  Serial.println(sensorValue); // Enviar valor a Processing
+  delay(100); // Esperar un momento
+}
+
+```
+
+<img src="https://raw.githubusercontent.com/rarandamartinez-del/interfazII/refs/heads/main/img/sharp.png"/>
+
+##### Sensor sharp
+```js
 /*******************************
            Conexión:
              VCC-5V
@@ -531,7 +550,4 @@ void loop()
   Serial.println(sensorValue); //imprime el valor a serial.
   delay(200);
 }
-
 ```
-
-<img src="https://raw.githubusercontent.com/rarandamartinez-del/interfazII/refs/heads/main/img/sharp.png"/>
